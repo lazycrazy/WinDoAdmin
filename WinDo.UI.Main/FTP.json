@@ -1,0 +1,12 @@
+{
+    "FtpServerIP":"192.168.52.138",
+    "FtpServerPort":"21",
+    "FtpUserName":"ftpuser",
+    "FtpPassWord":"123456",
+    "FtpRootFolder":"ftpAutoUpdate",
+    "UpdateFolder":"Update",
+    "UpdateConfig":"MIPUpdate.json",
+    "Type":"MIP",
+    "LocBakPath":"D:\\AutoUpdateBak",
+    "LocTransferPath":"D:\\AutoUpdateFtpNew"
+}

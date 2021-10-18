@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0945DC48-DD05-4439-A396-13BF54C9725A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinDo.Utilities</RootNamespace>
+    <AssemblyName>WinDo.Utilities</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\ClientCache.cs" />
+    <Compile Include="Mock\MockApi.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ActionHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ChineseStringHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\CHS2PinYinHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\WebAPIHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ColorHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ObjectExtensions.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ListHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ClsImeHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\DataTableToList.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\DateTimeHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\DialogHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\DosHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\EmailHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\EnumDescription.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\EnumExtensions.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ExportCSVHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\FileHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\FTPHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\FTPUtil.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\GZipHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\HiPerfTimerHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ImageHandle\ImageHandler.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ImageHandle\ImageHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\IniFileHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\INI\IniFile.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\JsonHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\LogHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\LunarCalendarHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\MachineInfoHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\MathHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\OS.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\PinYinConverter.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ProcessHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\RandomHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ReflectHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\Regex\RegexPatternHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\Regex\RegexValidatorHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\RMBHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\SecretHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\SemiNumericComparer.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\SerializeHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\StringHelper.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\ValidateUtil.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\WindowAPI.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\RequestWebServiceHelper.cs" />
+    <Compile Include="PublicResource%28公共的资源信息%29\PublicRes.cs" />
+    <Compile Include="PublicResource%28公共的资源信息%29\ResourceEnum.cs" />
+    <Compile Include="PublicResource%28公共的资源信息%29\UIInfo.cs" />
+    <Compile Include="PublicResource%28公共的资源信息%29\SystemInfo.cs" />
+    <Compile Include="PublicResource%28公共的资源信息%29\UserInfo.cs" />
+    <Compile Include="PublicLibrary%28公共的算法库%29\XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WinDo.Model\WinDo.Model.csproj">
+      <Project>{DDBEB638-2007-4988-82FB-30A90CE167BD}</Project>
+      <Name>WinDo.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mock\Configs.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\Modules.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\Privileges.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\SystemDic.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\SystemDicGroup.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\UserModules.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\UserManageInfos.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\UserPrivileges.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\Machines.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\Users.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
