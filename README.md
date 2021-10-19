@@ -19,7 +19,7 @@ vs2019、.net framework4.0、winform
 
 ## 运行：
 1. git clone 或下载源码  
-2. vs打开 F5启动
+2. vs打开后，将WinDo.UI.Main设为启动项目，F5启动
 
 ## 框架实现了以下Web风格的交互效果：
 1. 异形登录窗体（圆角，阴影，透明）
