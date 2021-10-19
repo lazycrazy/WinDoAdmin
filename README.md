@@ -7,8 +7,10 @@ an amazing winform admin
 它是从大型ERP软件提炼出来的，包含了多级动态菜单，用户权限管理，字典和配置管理，
 提供了丰富的功能组件和模块化支持，可以帮助你使用Winform技术快速搭建企业级中后台产品原型。
 
-## 送给各位同行者
-* 作者：lazycrazy  
+### 最新原创框架，送给同行者
+
+## 开发者信息
+* 开发者：lazycrazy  
 * github：https://github.com/lazycrazy  
 * gitee：https://gitee.com/lazy-crazy  
 * 博客：https://www.cnblogs.com/lazycrazy  
